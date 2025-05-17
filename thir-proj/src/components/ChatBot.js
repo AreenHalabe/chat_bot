@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Interactions } from '@aws-amplify/interactions';
-
+import { sendMessageToGraphQL } from '../utils/sendMessage.js';
 
 import { Amplify } from 'aws-amplify';
 import awsExports from '../aws-exports';
@@ -27,17 +27,21 @@ function ChatBot() {
   async function sendMessage() {
     if (!input) return;
 
+    // Save user message first
+    await sendMessageToGraphQL(input, 'user');
     setMessages((msgs) => [...msgs, { from: 'user', text: input }]);
 
     try {
       const response = await Interactions.send('CloudAssistantBot', input);
+
+      // Save bot response
+      await sendMessageToGraphQL(response.message, 'bot');
       setMessages((msgs) => [...msgs, { from: 'bot', text: response.message }]);
     } catch (error) {
       console.error('Lex error:', error);
-      setMessages((msgs) => [
-        ...msgs,
-        { from: 'bot', text: 'Sorry, something went wrong.' },
-      ]);
+      const errorMsg = 'Sorry, something went wrong.';
+      await sendMessageToGraphQL(errorMsg, 'bot');
+      setMessages((msgs) => [...msgs, { from: 'bot', text: errorMsg }]);
     }
 
     setInput('');
@@ -95,3 +99,6 @@ function ChatBot() {
 }
 
 export default ChatBot;
+
+
+
