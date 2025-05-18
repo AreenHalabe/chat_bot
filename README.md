@@ -56,4 +56,5 @@ This project leverages AWS services to build a chatbot that can perform basic op
 Open the app in your browser at http://localhost:3000.
 
 Usage 
+Amplify Url : https://ddh2upfgk1kdj.cloudfront.net/
 
