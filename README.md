@@ -11,7 +11,7 @@ This project leverages AWS services to build a chatbot that can perform basic op
 - **Conversational Interface**: Uses Amazon Lex for conversational AI.
 - **User Authentication**: Managed through Amazon Cognito.
 - **Interaction with AWS Services**: Lists EC2 instances and S3 buckets.
-- **Serverless Architecture**: Backend powered by AWS Lambda and API Gateway.
+- **Serverless Architecture**: Backend powered by AWS AppSync and GraphQL And DynamoDB
 - **Responsive Web Interface**: Built with React.js.
 
 ## Technologies Used
@@ -21,7 +21,7 @@ This project leverages AWS services to build a chatbot that can perform basic op
 - **AWS Lambda**: For running backend logic.
 - **Amazon Cognito**: For user authentication and management.
 - **React.js**: Frontend framework for building the web interface.
-- **AWS API Gateway**: For exposing APIs to interact with Lambda functions.
+- **AWS AppSync**: For exposing APIs to interact with Lambda functions.
 
 ## Architecture
 
@@ -44,5 +44,15 @@ This project leverages AWS services to build a chatbot that can perform basic op
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/AI-Assistant.git
-   cd AI-Assistant
+   https://github.com/AreenHalabe/chat_bot.git
+   cd thir-proj2
+2. **Install Dependencies**:
+   ```bash
+   npm install
+3. **Start the React App**
+   ```bash
+   npm start
+Open the app in your browser at http://localhost:3000.
+
+Usage 
+
