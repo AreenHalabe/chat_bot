@@ -25,7 +25,9 @@ This project leverages AWS services to build a chatbot that can perform basic op
 
 ## Architecture
 
-![Architecture Diagram](./assets/architecture.png)
+![Architecture Diagram](./thir-proj/public.png)
+(https://d2908q01vomqb2.cloudfront.net/0a57cb53ba59c46fc4b692527a38a87c78d84028/2023/08/25/Figure1.png)
+
 
 - **Frontend (React.js)**: Interacts with users and connects to **Amazon Lex** via AWS Amplify.
 - **Amazon Lex**: Handles natural language understanding, identifies intents, and passes relevant data to **AWS Lambda**.
