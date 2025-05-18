@@ -25,7 +25,7 @@ This project leverages AWS services to build a chatbot that can perform basic op
 
 ## Architecture
 
-![Architecture Diagram](./thir-proj/public.png)
+![Architecture Diagram](./thir-proj/public/Ar.png)
 (https://d2908q01vomqb2.cloudfront.net/0a57cb53ba59c46fc4b692527a38a87c78d84028/2023/08/25/Figure1.png)
 
 
