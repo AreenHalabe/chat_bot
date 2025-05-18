@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-thirproj-dev-ecb3b-authRole",
+      "UnauthRoleArn": "arn:aws:iam::475852407060:role/amplify-thirproj-dev-ecb3b-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::475852407060:role/amplify-thirproj-dev-ecb3b-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-thirproj-dev-ecb3b-deployment",
+      "UnauthRoleName": "amplify-thirproj-dev-ecb3b-unauthRole",
+      "StackName": "amplify-thirproj-dev-ecb3b",
+      "StackId": "arn:aws:cloudformation:us-east-1:475852407060:stack/amplify-thirproj-dev-ecb3b/738fbfe0-3292-11f0-a79c-125487e00b97",
+      "AmplifyAppId": "d7rhumph7w29i"
+    },
+    "categories": {
+      "auth": {
+        "thirproj435979b2": {}
+      },
+      "api": {
+        "thirproj": {}
+      }
+    }
+  }
+}

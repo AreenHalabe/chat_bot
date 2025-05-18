@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "thirproj",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "auththirproj435979b2",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
